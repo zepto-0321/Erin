@@ -1,9 +1,9 @@
-#erin.js
-##どこでもえーりんの助けが呼べる！！
+# erin.js
+## どこでもえーりんの助けが呼べる！！
 その名の通りです。
 とっても簡単に使えます。
 
-###例
+### 例
 ```html
 <!DOCTYPE HTML>
 <html>
@@ -13,9 +13,9 @@
     <script src ="hoge.js"></script>
   </body>
 </html>
-
+```
 ```js
 //hoge.js
 //20pxでえーりんを召喚
 createErin(20);
-
+```
