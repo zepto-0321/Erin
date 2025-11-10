@@ -26,7 +26,20 @@ document.head.appendChild(style);
 };
 
 function createErin(px){
-  //<p><span>(ﾟ∀ﾟ)</span><span class ="udefuri">O</span><span class = "call">えーりん！えーりん！</span></p>
+  const erin = setup(px);
+  document.body.appendChild(erin);
+}
+
+function createAllErinsOnClass(className,px){
+  const erin = setup(px);
+  const elm = document.querySelectorAll("."+className);
+  elm.forEach(c =>{
+    c.appendChild(erin.cloneNode(true));
+  });
+}
+
+function setup(px){
+    //<p><span>(ﾟ∀ﾟ)</span><span class ="udefuri">O</span><span class = "call">えーりん！えーりん！</span></p>
   const erin = document.createElement("p");
   erin.style.fontSize = px + "px";//サイズ設定
   const hand = document.createElement("span");
@@ -38,5 +51,6 @@ function createErin(px){
   call.textContent = "えーりん！えーりん！";
   call.classList.add("call");
   erin.append(face,hand,call);//子要素に
-  document.body.appendChild(erin);
+  return erin;
 }
+
