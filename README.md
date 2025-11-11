@@ -19,3 +19,11 @@
 //20pxでえーりんを召喚
 createErin(20);
 ```
+### 例2
+```html
+<div class = "helpMe"></div>
+```
+```js
+//helpMeの位置に20pxでえーりんを召喚
+createAllErinsOnClass("helpMe",20);
+```
