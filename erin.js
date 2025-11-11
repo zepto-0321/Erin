@@ -24,21 +24,21 @@ style.textContent = `
 document.head.appendChild(style);
 
 };
-
-function createErin(px){
-  const erin = setup(px);
+class ERIN{
+public createErin(px){
+  const erin = this.setup(px);
   document.body.appendChild(erin);
 }
 
-function createAllErinsOnClass(className,px){
-  const erin = setup(px);
+public createAllErinsOnClass(className,px){
+  const erin = this.setup(px);
   const elm = document.querySelectorAll("."+className);
   elm.forEach(c =>{
     c.appendChild(erin.cloneNode(true));
   });
 }
 
-function setup(px){
+private setup(px){
     //<p><span>(ﾟ∀ﾟ)</span><span class ="udefuri">O</span><span class = "call">えーりん！えーりん！</span></p>
   const erin = document.createElement("p");
   erin.style.fontSize = px + "px";//サイズ設定
@@ -52,5 +52,6 @@ function setup(px){
   call.classList.add("call");
   erin.append(face,hand,call);//子要素に
   return erin;
+}
 }
 
