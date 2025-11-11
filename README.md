@@ -2,6 +2,8 @@
 ## どこでもえーりんの助けが呼べる！！
 その名の通りです。
 とっても簡単に使えます。
+`Erin`クラスには2つの関数が今のところ備わっています。
+`Erin`クラスは`static`クラスです。
 
 ### 例
 ```html
@@ -17,7 +19,7 @@
 ```js
 //hoge.js
 //20pxでえーりんを召喚
-createErin(20);
+Erin.createErin(20);
 ```
 ### 例2
 ```html
@@ -25,5 +27,5 @@ createErin(20);
 ```
 ```js
 //helpMeの位置に20pxでえーりんを召喚
-createAllErinsOnClass("helpMe",20);
+Erin.createAllErinsOnClass("helpMe",20);
 ```
