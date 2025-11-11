@@ -24,21 +24,22 @@ style.textContent = `
 document.head.appendChild(style);
 
 };
-class ERIN{
-public createErin(px){
-  const erin = this.setup(px);
+class Erin{
+  
+static createErin(px){
+  const erin = Erin.#setup(px);
   document.body.appendChild(erin);
 }
 
-public createAllErinsOnClass(className,px){
-  const erin = this.setup(px);
+static createAllErinsOnClass(className,px){
+  const erin = Erin.#setup(px);
   const elm = document.querySelectorAll("."+className);
   elm.forEach(c =>{
     c.appendChild(erin.cloneNode(true));
   });
 }
 
-private setup(px){
+static #setup(px){
     //<p><span>(ﾟ∀ﾟ)</span><span class ="udefuri">O</span><span class = "call">えーりん！えーりん！</span></p>
   const erin = document.createElement("p");
   erin.style.fontSize = px + "px";//サイズ設定
