@@ -11,7 +11,7 @@
 <html>
   <head><meta charset="utf-8"></head>
   <body>
-    <script src ="https://cdn.jsdelivr.net/gh/zepto-0321/Erin@main/erin.js"></script>
+    <script src ="https://cdn.jsdelivr.net/gh/zepto-0321/Erin@v1.0.0/erin.js"></script>
     <script src ="hoge.js"></script>
   </body>
 </html>
